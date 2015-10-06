@@ -1,0 +1,46 @@
+<resources>
+
+    <!--Nombre de Aplicación-->
+
+    <string name="app_name">Conversor BHD</string>
+
+    <!--Opciones de Menú superior-->
+
+    <string name="about">Acerca de</string>
+    <string name="exit">Salir</string>
+
+    <!--Drawer-->
+
+    <string name="drawer_open">Abrir menú lateral</string>
+    <string name="drawer_close">Cerrar menú lateral</string>
+
+    <!--Títulos de Fragments-->
+
+    <string name="binary_title">CONVERSOR BINARIO</string>
+    <string name="hexa_title">CONVERSOR HEXADECIMAL</string>
+
+    <!-- Fragment Conversor Binario-Decimal -->
+
+    <string name="mainText">CONVERSOR BINARIO-DECIMAL</string>
+    <string name="radioButton1">Decimal a Binario</string>
+    <string name="radioButton2">Binario a Decimal</string>
+
+    <!-- Fragment Conversor Hexadecimal-Decimal -->
+
+    <string name="mainText1">CONVERSOR HEXADECIMAL-DECIMAL</string>
+    <string name="radioButton3">Decimal a Hexadecimal</string>
+    <string name="radioButton4">Hexadecimal a Decimal</string>
+
+    <!-- Fragment Conversor Binario-Hexadecimal -->
+
+    <string name="mainText2">CONVERSOR BINARIO-HEXADECIMAL</string>
+    <string name="radioButton5">Binario a Hexadecimal</string>
+    <string name="radioButton6">Hexadecimal a Binario</string>
+
+    <!-- Fragments (general)-->
+
+    <string name="actionText">Ingrese valor</string>
+    <string name="convert">Convertir</string>
+    <string name="resultText">Resultado</string>
+
+</resources>
