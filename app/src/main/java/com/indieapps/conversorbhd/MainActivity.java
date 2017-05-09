@@ -143,7 +143,7 @@ public class MainActivity extends ActionBarActivity {
             case R.id.about:
                 AlertDialog.Builder message = new AlertDialog.Builder(this);
                 message.setTitle("Información");
-                message.setMessage("Versión: 1.0 (2015)\nProgramador: Hourquebie, Lucas\nProyecto: IndieApps");
+                message.setMessage("Versión: 1.0 (2017)\nProgramador: Hourquebie, Lucas\nProyecto: IndieApps");
                 message.setCancelable(false);
                 message.setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
