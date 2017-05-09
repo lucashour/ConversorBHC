@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ConversorBHC.iml" filepath="$PROJECT_DIR$/ConversorBHC.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/conversor_bhc.iml" filepath="$PROJECT_DIR$/conversor_bhc.iml" />
     </modules>
   </component>
 </project>

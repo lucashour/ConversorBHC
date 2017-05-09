@@ -1,16 +1,15 @@
 package com.indieapps.conversorbhd;
 
-public class DatosGlobales {
+public class GlobalData {
 	
-	public static int opcion;
-	
-	
+	public static int option;
+
 	public static void setOption(int num){
-		opcion = num;
+		option = num;
 	}
 	
 	public static int getOption(){
-		return opcion;
+        return option;
 	}
 
 }

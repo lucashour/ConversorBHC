@@ -57,7 +57,7 @@ public class MainActivity extends ActionBarActivity {
         });
        /*Configuración del Fragment visible por defecto*/
         FragmentManager fragmentManager = getFragmentManager();
-        ConversorBinario fragmentA = new ConversorBinario();
+        DecimalBinaryConverter fragmentA = new DecimalBinaryConverter();
         fragmentManager.beginTransaction().replace(R.id.content, fragmentA).commit();
 
        /*Configuración de escucha de clicks en las secciones del drawer.*/
@@ -70,15 +70,15 @@ public class MainActivity extends ActionBarActivity {
                     int id = recyclerView.getChildAdapterPosition(child);
                     switch (id) {
                         case 1:
-                            ConversorBinario fragmentA = new ConversorBinario();
+                            DecimalBinaryConverter fragmentA = new DecimalBinaryConverter();
                             localFragmentManager.beginTransaction().replace(R.id.content, fragmentA).commit();
                             break;
                         case 2:
-                            ConversorHexadecimal fragmentB = new ConversorHexadecimal();
+                            DecimalHexaConverter fragmentB = new DecimalHexaConverter();
                             localFragmentManager.beginTransaction().replace(R.id.content, fragmentB).commit();
                             break;
                         case 3:
-                            ConversorBinarioHexadecimal fragmentC = new ConversorBinarioHexadecimal();
+                            BinaryHexaConverter fragmentC = new BinaryHexaConverter();
                             localFragmentManager.beginTransaction().replace(R.id.content, fragmentC).commit();
                             break;
                     }
@@ -93,7 +93,6 @@ public class MainActivity extends ActionBarActivity {
                 /* Método de clase abstracta vacío, no interesa su utilización */
             }
 
-            @Override
             public void onRequestDisallowInterceptTouchEvent(boolean disallowIntercept) {
                 /* Método de clase abstracta vacío, no interesa su utilización */
             }
@@ -102,7 +101,6 @@ public class MainActivity extends ActionBarActivity {
         layoutManager = new LinearLayoutManager(this);            // Creando a layout Manager
 
         recyclerView.setLayoutManager(layoutManager);            // Configurando el layout Manager
-
 
         drawer = (DrawerLayout) findViewById(R.id.DrawerLayout);        // drawer object Assigned to the view
         drawerToggle = new ActionBarDrawerToggle(this, drawer,toolbar,R.string.drawer_open,R.string.drawer_close){
@@ -143,18 +141,17 @@ public class MainActivity extends ActionBarActivity {
 
         switch(menuItemId){
             case R.id.about:
-                AlertDialog.Builder mensaje = new AlertDialog.Builder(this);
-                mensaje.setTitle("Información");
-                mensaje.setMessage("Versión: 1.0 (2015)\nProgramador: Hourquebie, Lucas\nProyecto: IndieApps");
-                mensaje.setCancelable(false);
-                mensaje.setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
-
+                AlertDialog.Builder message = new AlertDialog.Builder(this);
+                message.setTitle("Información");
+                message.setMessage("Versión: 1.0 (2015)\nProgramador: Hourquebie, Lucas\nProyecto: IndieApps");
+                message.setCancelable(false);
+                message.setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.cancel();
                     }
                 });
-                AlertDialog msj = mensaje.create();
-                msj.show();
+
+                message.create().show();
                 break;
             case R.id.exit:
                 finish();
